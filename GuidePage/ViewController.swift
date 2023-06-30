@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("测试下提交")
        let pageIndex =  round(scrollView.contentOffset.x / view.bounds.width)
        pageControl.currentPage = Int(pageIndex)
         if scrollView.contentOffset.x > (view.bounds.width * 2 + 50) {
